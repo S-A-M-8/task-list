@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.5">
+	<title>Getting Started with JavaScript</title>
+	<link href="favicon.png" rel="icon shortcut">
+	<link href="styles.css" rel="stylesheet">
+	<script defer src="scripts.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<h1>Getting Started with JavaScript</h1>
+		</header>
+		
+		<main>
+			<section>
+				<h2>My Task List</h2>
+				
+				<div class="search-label-switch-container">
+					<label for="toggle-checkbox" class="search-label">Search Tasks</label>
+					<label class="toggle-switch">
+						<input type="checkbox" id="toggle-checkbox" class="toggle-checkbox">
+						<span class="slider"></span>
+					</label>
+				</div>
+			</section>
+			
+			<input type="text" placeholder="Please Search a Task" id="task-search" class="task-search hide" autocomplete="off">
+			
+			<form id="task-input-form">
+				<input type="text" required placeholder="Please Enter a Task" id="task-input" class="task-input" autofocus autocomplete="off">
+			</form>
+			
+			<ol class="task-list" id="task-list"></ol>
+		</main>
+		
+		<footer class="footer">
+			<p>&copy; 2022 - 2023 SAM</p>
+		</footer>
+	</div>
+	
+	<div class="task-toast" id="task-toast"></div>
+</body>
+</html>
